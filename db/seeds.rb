@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+trip_list = ['Grand Canyon', 'Baha Peninsula', 'Chamonix', 'West Water Canyon']
+
+trip_list.each do |trip_name|
+  Trip.create!(trip_name: trip_name)
+end
