@@ -1,6 +1,6 @@
 Groupfood::Application.routes.draw do
-  get "trip/add_person"
-  get "trip/add_expense"
+  resources :trips
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
