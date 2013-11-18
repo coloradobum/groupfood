@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @trip_member.name %>
+</p>
+
+<p>
+  <strong>Trip:</strong>
+  <%= @trip_member.trip %>
+</p>
+
+<p>
+  <strong>Expenses:</strong>
+  <%= @trip_member.expenses %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @trip_member.description %>
+</p>
+
+<%= link_to 'Edit', edit_trip_member_path(@trip_member) %> |
+<%= link_to 'Back', trip_members_path %>
