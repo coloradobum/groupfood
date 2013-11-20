@@ -5,6 +5,7 @@ class TripMembersController < ApplicationController
   # GET /trip_members.json
   def index
     @trip_members = TripMember.all
+    #@trip = TripMember.find(params[id])
   end
 
   # GET /trip_members/1
