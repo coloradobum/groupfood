@@ -5,7 +5,6 @@ class CreateTripMembers < ActiveRecord::Migration
       t.belongs_to :trip, index: true
       t.decimal :expenses
       t.text :description
-
       t.timestamps
     end
   end
