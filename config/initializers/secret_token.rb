@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Groupfood::Application.config.secret_key_base = '585c7e66dbc617451661cbb335172420e1ba569d3435403888b9548290ff0597157fd7d05d375b1b8fdd099f1a71e7848a0fc8fb291932a557cb4a02b75b9c53'
+Groupfood::Application.config.secret_key_base = '85ec1f51d14bc0572db604c3046fb6d9e4792e5680998b1bf6cd74f235cb8f3a5e097d8c933b8a2a60c5847950b13b93e6531da021f7b6bbe07ca6a2f984bb36'
