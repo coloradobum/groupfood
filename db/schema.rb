@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(version: 20131126055039) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "member_id"
   end
 
 end
