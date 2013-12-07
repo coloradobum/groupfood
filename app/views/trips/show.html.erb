@@ -2,7 +2,11 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @trip.name %>
+  <%= @trip.name %></br>
+  <% @trip.members.each do |member| %>
+  	<%= member.name %>
+  	<%= member.expense %>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_trip_path(@trip) %> |

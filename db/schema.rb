@@ -11,20 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131126055039) do
+ActiveRecord::Schema.define(version: 20131206232949) do
 
   create_table "members", force: true do |t|
     t.string   "name"
     t.float    "expense"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "trip_id"
   end
 
   create_table "trips", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "member"
+    t.integer  "member_id"
   end
 
 end
