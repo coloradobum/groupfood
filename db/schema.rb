@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 20131206232949) do
     t.float    "expense"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "trip_id"
   end
 
   create_table "trips", force: true do |t|
