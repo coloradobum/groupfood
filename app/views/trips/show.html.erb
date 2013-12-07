@@ -1,12 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong> Trip Name:</strong>
   <%= @trip.name %></br>
+
+  <strong> Members </strong></br>
   <% @trip.members.each do |member| %>
   	<%= member.name %>
   	<%= member.expense %>
   <% end %>
+
+  <%= link_to 'Add a new member', new_member %>
+
 </p>
 
 <%= link_to 'Edit', edit_trip_path(@trip) %> |
