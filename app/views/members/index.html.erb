@@ -16,6 +16,8 @@
       <tr>
         <td><%= member.name %></td>
         <td><%= member.expense %></td>
+    
+        <td><%= member.trip.name %></td>
         <td><%= link_to 'Show', member %></td>
         <td><%= link_to 'Edit', edit_member_path(member) %></td>
         <td><%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %></td>

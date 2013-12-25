@@ -1,3 +1,3 @@
 class Member < ActiveRecord::Base
-  has_many :members
+  belongs_to :trip  
 end
