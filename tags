@@ -1,0 +1,45 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Groupfood
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+CreateMembers	db/migrate/20131126053849_create_members.rb	/^class CreateMembers < ActiveRecord::Migration$/;"	c
+CreateTrips	db/migrate/20131126053727_create_trips.rb	/^class CreateTrips < ActiveRecord::Migration$/;"	c
+Groupfood	config/application.rb	/^module Groupfood$/;"	m
+Member	app/models/member.rb	/^class Member < ActiveRecord::Base$/;"	c
+MemberTest	test/models/member_test.rb	/^class MemberTest < ActiveSupport::TestCase$/;"	c
+MembersController	app/controllers/members_controller.rb	/^class MembersController < ApplicationController$/;"	c
+MembersControllerTest	test/controllers/members_controller_test.rb	/^class MembersControllerTest < ActionController::TestCase$/;"	c
+MembersHelper	app/helpers/members_helper.rb	/^module MembersHelper$/;"	m
+MembersHelperTest	test/helpers/members_helper_test.rb	/^class MembersHelperTest < ActionView::TestCase$/;"	c
+Trip	app/models/trip.rb	/^class Trip < ActiveRecord::Base$/;"	c
+TripTest	test/models/trip_test.rb	/^class TripTest < ActiveSupport::TestCase$/;"	c
+TripsController	app/controllers/trips_controller.rb	/^class TripsController < ApplicationController$/;"	c
+TripsControllerTest	test/controllers/trips_controller_test.rb	/^class TripsControllerTest < ActionController::TestCase$/;"	c
+TripsHelper	app/helpers/trips_helper.rb	/^module TripsHelper$/;"	m
+TripsHelperTest	test/helpers/trips_helper_test.rb	/^class TripsHelperTest < ActionView::TestCase$/;"	c
+change	db/migrate/20131126053727_create_trips.rb	/^  def change$/;"	f	class:CreateTrips
+change	db/migrate/20131126053849_create_members.rb	/^  def change$/;"	f	class:CreateMembers
+create	app/controllers/members_controller.rb	/^  def create$/;"	f	class:MembersController
+create	app/controllers/trips_controller.rb	/^  def create$/;"	f	class:TripsController
+destroy	app/controllers/members_controller.rb	/^  def destroy$/;"	f	class:MembersController
+destroy	app/controllers/trips_controller.rb	/^  def destroy$/;"	f	class:TripsController
+edit	app/controllers/members_controller.rb	/^  def edit$/;"	f	class:MembersController
+edit	app/controllers/trips_controller.rb	/^  def edit$/;"	f	class:TripsController
+index	app/controllers/members_controller.rb	/^  def index$/;"	f	class:MembersController
+index	app/controllers/trips_controller.rb	/^  def index$/;"	f	class:TripsController
+member_params	app/controllers/members_controller.rb	/^    def member_params$/;"	f	class:MembersController
+new	app/controllers/members_controller.rb	/^  def new$/;"	f	class:MembersController
+new	app/controllers/trips_controller.rb	/^  def new$/;"	f	class:TripsController
+set_member	app/controllers/members_controller.rb	/^    def set_member$/;"	f	class:MembersController
+set_trip	app/controllers/trips_controller.rb	/^    def set_trip$/;"	f	class:TripsController
+show	app/controllers/members_controller.rb	/^  def show$/;"	f	class:MembersController
+show	app/controllers/trips_controller.rb	/^  def show$/;"	f	class:TripsController
+trip_params	app/controllers/trips_controller.rb	/^    def trip_params$/;"	f	class:TripsController
+update	app/controllers/members_controller.rb	/^  def update$/;"	f	class:MembersController
+update	app/controllers/trips_controller.rb	/^  def update$/;"	f	class:TripsController
