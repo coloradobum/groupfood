@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Groupfood::Application.load_tasks
+Groupfood2::Application.load_tasks

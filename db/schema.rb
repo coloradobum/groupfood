@@ -11,18 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131202165829) do
+ActiveRecord::Schema.define(version: 20140107174446) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "expenses", force: true do |t|
+    t.string   "title"
+    t.decimal  "amount"
+    t.text     "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "member_id"
+  end
 
   create_table "members", force: true do |t|
     t.string   "name"
-    t.float    "expense"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "trip_id"
   end
 
   create_table "trips", force: true do |t|
-    t.string   "name"
+    t.text     "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
