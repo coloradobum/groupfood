@@ -6,7 +6,11 @@
 %p
   %b Trip:
   = @member.trip_id
+%p
+  = @member.id
 
 = link_to 'Edit', edit_member_path(@member)
 \|
 = link_to 'Back', members_path
+\|
+= link_to 'Add Expense', controller: 'expenses', action: 'new_by_id', id: @member.id

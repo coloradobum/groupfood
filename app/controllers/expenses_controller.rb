@@ -17,6 +17,14 @@ class ExpensesController < ApplicationController
     @expense = Expense.new
   end
 
+  # GET /expenses/:id/new
+  def new_by_id
+    @expense = Expense.new
+    @expense.member_id = params[:id]
+
+    render "new"
+  end
+
   # GET /expenses/1/edit
   def edit
   end
