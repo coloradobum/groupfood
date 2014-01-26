@@ -8,6 +8,10 @@
     = expense.title
     ($#{expense.amount})
 
+%p
+  %b Trip ID:
+  = @member.trip_id.inspect
+
 = link_to "Add Expense", new_expense_path(@member)
 = link_to 'Edit', edit_member_path(@member)
 \|

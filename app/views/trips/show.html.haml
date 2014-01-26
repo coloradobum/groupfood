@@ -2,6 +2,7 @@
 %p
   %b Name:
   = @trip.name
+  %b Total Cost:
   = @trip.total_trip_expense
 
 %p
@@ -12,6 +13,7 @@
       %b
         = member.total_expenses
 
+= link_to 'Add Member', new_member_path(:trip_id => @trip)
 
 = link_to 'Edit', edit_trip_path(@trip)
 \|

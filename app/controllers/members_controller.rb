@@ -14,7 +14,9 @@ class MembersController < ApplicationController
 
   # GET /members/new
   def new
-    @member = Member.new
+    pry
+    @member = Member.new :trip_id => params[:trip_id]
+  
   end
 
   # GET /members/1/edit

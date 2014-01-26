@@ -3,13 +3,14 @@
 %table
   %tr
     %th Name
-    %th
+    %th Trip ID
     %th
     %th
 
   - @members.each do |member|
     %tr
       %td= member.name
+      %td= member.trip_id
       %td= link_to 'Show', member
       %td= link_to 'Edit', edit_member_path(member)
       %td= link_to 'Destroy', member, :method => :delete, :data => { :confirm => 'Are you sure?' }
