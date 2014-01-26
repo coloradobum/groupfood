@@ -6,14 +6,14 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
-module Groupfood2
+module Gftest
   class Application < Rails::Application
 
     # don't generate RSpec tests for views and helpers
     config.generators do |g|
+      g.test_framework :rspec
       
-      g.test_framework :rspec, fixture: true
-      g.fixture_replacement :factory_girl, dir: 'spec/factories'
+      
       
       
       g.view_specs false

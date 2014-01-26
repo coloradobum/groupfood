@@ -1,6 +1,4 @@
-Groupfood2::Application.routes.draw do
-
-	root "trips#index"
+Gftest::Application.routes.draw do
   resources :expenses
 
   resources :members

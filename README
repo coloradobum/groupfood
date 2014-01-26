@@ -1,4 +1,4 @@
-Groupfood2
+Gftest
 ========================
 
 This application was generated with the rails_apps_composer gem:
@@ -12,8 +12,17 @@ Recipes:
 ["apps4", "controllers", "core", "email", "extras", "frontend", "gems", "git", "init", "models", "prelaunch", "railsapps", "readme", "routes", "saas", "setup", "testing", "views"]
 
 Preferences:
-{:git=>true, :apps4=>"none", :dev_webserver=>"webrick", :prod_webserver=>"same", :database=>"postgresql", :templates=>"haml", :unit_test=>"rspec", :integration=>"rspec-capybara", :continuous_testing=>"guard", :fixtures=>"factory_girl", :frontend=>"bootstrap3", :email=>"none", :authentication=>"none", :authorization=>"none", :form_builder=>"none", :starter_app=>"home_app", :rvmrc=>false, :better_errors=>true, :ban_spiders=>true, :github=>true}
+{:git=>true, :apps4=>"none", :dev_webserver=>"webrick", :prod_webserver=>"same", :database=>"postgresql", :templates=>"haml", :unit_test=>"rspec", :integration=>"none", :continuous_testing=>"guard", :fixtures=>"none", :frontend=>"none", :email=>"none", :authentication=>"none", :authorization=>"none", :form_builder=>"none", :starter_app=>"none", :rvmrc=>true, :better_errors=>true}
 
 ________________________
 
 License
+
+TODO
+upload image of recipt
+oauth to facebook
+concept of trip leader account where they can remove people and
+live calculating of trip costs -allowing all to ro others expenses details.
+choose to send group email with or without expenses and choose to send to all or select people from a trip.
+each group leader can make a trip that others can join - maybe authorize a join later, group leader must remove from a trip.
+

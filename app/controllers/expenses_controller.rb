@@ -15,7 +15,6 @@ class ExpensesController < ApplicationController
   # GET /expenses/new
   def new
     @expense = Expense.new
-    @member  = Member.find(params[:member_id])||1
   end
 
   # GET /expenses/1/edit
@@ -70,6 +69,6 @@ class ExpensesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def expense_params
-      params.require(:expense).permit(:title, :amount, :comment, :member, :member_id)
+      params.require(:expense).permit(:amount, :comment, :member_id)
     end
 end

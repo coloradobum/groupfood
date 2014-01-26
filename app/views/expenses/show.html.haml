@@ -1,14 +1,14 @@
 %p#notice= notice
 
 %p
-  %b Title:
-  = @expense.title
-%p
   %b Amount:
   = @expense.amount
 %p
   %b Comment:
   = @expense.comment
+%p
+  %b Member:
+  = @expense.member_id
 
 = link_to 'Edit', edit_expense_path(@expense)
 \|

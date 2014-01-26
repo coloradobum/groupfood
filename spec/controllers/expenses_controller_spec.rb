@@ -23,7 +23,7 @@ describe ExpensesController do
   # This should return the minimal set of attributes required to create a valid
   # Expense. As you add validations to Expense, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "title" => "MyString" } }
+  let(:valid_attributes) { { "amount" => "1.5" } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -85,14 +85,14 @@ describe ExpensesController do
       it "assigns a newly created but unsaved expense as @expense" do
         # Trigger the behavior that occurs when invalid params are submitted
         Expense.any_instance.stub(:save).and_return(false)
-        post :create, {:expense => { "title" => "invalid value" }}, valid_session
+        post :create, {:expense => { "amount" => "invalid value" }}, valid_session
         assigns(:expense).should be_a_new(Expense)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         Expense.any_instance.stub(:save).and_return(false)
-        post :create, {:expense => { "title" => "invalid value" }}, valid_session
+        post :create, {:expense => { "amount" => "invalid value" }}, valid_session
         response.should render_template("new")
       end
     end
@@ -106,8 +106,8 @@ describe ExpensesController do
         # specifies that the Expense created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        Expense.any_instance.should_receive(:update).with({ "title" => "MyString" })
-        put :update, {:id => expense.to_param, :expense => { "title" => "MyString" }}, valid_session
+        Expense.any_instance.should_receive(:update).with({ "amount" => "1.5" })
+        put :update, {:id => expense.to_param, :expense => { "amount" => "1.5" }}, valid_session
       end
 
       it "assigns the requested expense as @expense" do
@@ -128,7 +128,7 @@ describe ExpensesController do
         expense = Expense.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         Expense.any_instance.stub(:save).and_return(false)
-        put :update, {:id => expense.to_param, :expense => { "title" => "invalid value" }}, valid_session
+        put :update, {:id => expense.to_param, :expense => { "amount" => "invalid value" }}, valid_session
         assigns(:expense).should eq(expense)
       end
 
@@ -136,7 +136,7 @@ describe ExpensesController do
         expense = Expense.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         Expense.any_instance.stub(:save).and_return(false)
-        put :update, {:id => expense.to_param, :expense => { "title" => "invalid value" }}, valid_session
+        put :update, {:id => expense.to_param, :expense => { "amount" => "invalid value" }}, valid_session
         response.should render_template("edit")
       end
     end

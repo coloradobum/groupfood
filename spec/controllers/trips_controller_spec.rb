@@ -23,7 +23,7 @@ describe TripsController do
   # This should return the minimal set of attributes required to create a valid
   # Trip. As you add validations to Trip, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "name" => "MyText" } }
+  let(:valid_attributes) { { "name" => "MyString" } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -106,8 +106,8 @@ describe TripsController do
         # specifies that the Trip created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        Trip.any_instance.should_receive(:update).with({ "name" => "MyText" })
-        put :update, {:id => trip.to_param, :trip => { "name" => "MyText" }}, valid_session
+        Trip.any_instance.should_receive(:update).with({ "name" => "MyString" })
+        put :update, {:id => trip.to_param, :trip => { "name" => "MyString" }}, valid_session
       end
 
       it "assigns the requested trip as @trip" do

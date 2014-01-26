@@ -1,18 +1,12 @@
 %p#notice= notice
+
 %p
   %b Name:
   = @member.name
 %p
-  %b Expenses:
-  - @member.expenses.each do |expense|
-    = expense.title
-    ($#{expense.amount})
+  %b Trip:
+  = @member.trip_id
 
-%p
-  %b Trip ID:
-  = @member.trip_id.inspect
-
-= link_to "Add Expense", new_expense_path(@member)
 = link_to 'Edit', edit_member_path(@member)
 \|
 = link_to 'Back', members_path

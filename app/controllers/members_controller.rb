@@ -14,9 +14,7 @@ class MembersController < ApplicationController
 
   # GET /members/new
   def new
-    pry
-    @member = Member.new :trip_id => params[:trip_id]
-  
+    @member = Member.new
   end
 
   # GET /members/1/edit
@@ -71,6 +69,6 @@ class MembersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def member_params
-      params.require(:member).permit(:name)
+      params.require(:member).permit(:name, :trip_id)
     end
 end
