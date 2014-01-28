@@ -9,4 +9,6 @@ Gftest::Application.routes.draw do
 
   get 'expenses/:id/new' => 'expenses#new_by_id'
 
+  get 'members/:id/new' => 'members#new_by_id'
+
 end

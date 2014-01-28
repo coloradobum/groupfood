@@ -17,6 +17,13 @@ class MembersController < ApplicationController
     @member = Member.new
   end
 
+  # Get /members/:id/new
+  def new_by_id
+    @member = Member.new
+    @member.trip_id = params[:id]
+    render 'new'
+  end
+
   # GET /members/1/edit
   def edit
   end
