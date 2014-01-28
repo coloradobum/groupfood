@@ -1,12 +1,34 @@
 %p#notice= notice
 
-%p
-  %b Name:
-  = @trip.name
-  - @trip.members.each do |m|
-    = m.name
-    - m.expenses.each do |e|
-      = e.comment
+%h1= @trip.name
+%table{:border => "1"}
+  %tbody
+    %tr
+      %th name
+      %th amount
+      %th comment
+    %tr
+      - @trip.members.each do |m|
+        %td= m.name
+        - m.expenses.each do |e|
+          %td= e.amount
+          %td= e.comment
+          %tr
 = link_to 'Edit', edit_trip_path(@trip)
 \|
 = link_to 'Back', trips_path
+%br
+%br
+%br
+%br
+%br
+%table{:border => "1"}
+  %tbody
+    - @f_ary = [1,3,4,5,6,6,7,8,9,10]
+    - cnt = 0
+    - @f_ary.each do |f|
+      - cnt += 1
+      %td= cnt
+      - if cnt == 5
+        - cnt = 0
+        %tr

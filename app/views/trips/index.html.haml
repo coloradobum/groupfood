@@ -1,5 +1,6 @@
-%h1 Listing trips
+%h1 Welcome to groupfood. 
 
+%h2 Select a trip or create a new one.
 %table
   %tr
     %th Name
@@ -9,11 +10,6 @@
 
   - @trips.each do |trip|
     %tr
-      %td= trip.name
-      %td= link_to 'Show', trip
-      %td= link_to 'Edit', edit_trip_path(trip)
-      %td= link_to 'Destroy', trip, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Trip', new_trip_path
+      %td= link_to trip.name, trip
+      
+%h3=link_to 'New Trip', new_trip_path

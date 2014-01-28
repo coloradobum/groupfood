@@ -1,4 +1,6 @@
 Gftest::Application.routes.draw do
+
+  root 'trips#index'
   resources :expenses
 
   resources :members

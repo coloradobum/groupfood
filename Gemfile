@@ -22,6 +22,9 @@ group :development do
   gem 'rb-inotify', :require=>false
   gem 'guard'
   gem 'guard-livereload', require: false
+  gem 'pry'
+  gem 'pry-doc'
+  gem 'capybara'
 end
 group :development, :test do
   gem 'rspec-rails'
