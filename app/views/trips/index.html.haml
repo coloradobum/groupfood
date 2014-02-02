@@ -1,15 +1,11 @@
 %h1 Welcome to groupfood. 
 
-%h2 Select a trip or create a new one.
+%h2 Select a trip.
 %table
   %tr
-    %th Name
-    %th
-    %th
-    %th
-
+    %th Trip Name
   - @trips.each do |trip|
     %tr
       %td= link_to trip.name, trip
       
-%h3=link_to 'New Trip', new_trip_path
+%h3=link_to 'Create a new trip', new_trip_path

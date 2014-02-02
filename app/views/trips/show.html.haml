@@ -1,16 +1,20 @@
 %p#notice= notice
 
 %h1= @trip.name
-%table{:border => "1"}
-  %tbody
+- if @trip.members.length == 0
+  %table{:border => "1"}
+    %tbody
+      %tr
+        %th Name
+        %th Total Expenses 
+      %tr
+        - if @trip.members.length == 0
+          - @trip.members.each do |m|
+            %td= link_to m.name, edit_member_path(@trip)
+            %td $99.00
     %tr
-      %th Name
-      %th Total Expenses 
-    %tr
-      - @trip.members.each do |m|
-        %td= link_to m.name, edit_member_path(@trip)
-        %td $99.00
-        %tr
+- else
+  %p Find some friends for this trip!
 %br
 %br
 
@@ -20,11 +24,11 @@
       %th Total Trip Expenses
       %th Expense amount per person
     %tr
-      %td 99.99
-      %td 5.00 per person
-= link_to 'Edit', edit_trip_path(@trip)
+      %td TODO:99.99
+      %td TODO: 5.00 per person
+= link_to 'Change name of this trip', edit_trip_path(@trip)
 \|
-= link_to 'Back', trips_path
+= link_to 'Back To List of Trips', trips_path
 %br
 %br
 = link_to 'Add a member to this trip.', controller: 'members', action: 'new_by_id', id: @trip.id 
