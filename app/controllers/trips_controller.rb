@@ -10,6 +10,7 @@ class TripsController < ApplicationController
   # GET /trips/1
   # GET /trips/1.json
   def show
+    @mockuserid = 1
   end
 
   # GET /trips/new

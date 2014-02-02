@@ -8,7 +8,6 @@
     = expense.title
     ($#{expense.amount})
 
-= link_to "Add Expense", new_expense_path(@member)
+= link_to "Add Expense", new_expense_path
 = link_to 'Edit', edit_member_path(@member)
-\|
 = link_to 'Back', members_path

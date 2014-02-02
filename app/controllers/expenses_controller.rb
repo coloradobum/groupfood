@@ -15,7 +15,7 @@ class ExpensesController < ApplicationController
   # GET /expenses/new
   def new
     @expense = Expense.new
-    @member  = Member.find(params[:member_id])||1
+    @member  = (params[:member_id])
   end
 
   # GET /expenses/1/edit
